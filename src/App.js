@@ -28,12 +28,10 @@ function App() {
   const handleRodeo = async () => {
     var newarr = await shuffle(arr)
     setRodeo(newarr)
-    console.log(newarr);
   }
 
   useEffect(() => {
     handleRodeo();
-    console.log(rodeo);
   })
 
   const handleClickRodeo = async () => {
@@ -41,7 +39,6 @@ function App() {
     //   await handleRodeo()
     //   console.log(rodeo);
     // }
-    console.log(rodeo);
     render (
       <div>
       <table>
@@ -67,12 +64,12 @@ function App() {
 const handleCowboy = async () => {
   var newarr = await shuffle(arr)
   setCowboy(newarr)
-  console.log(newarr);
+  
 }
 
 useEffect(() => {
   handleCowboy();
-  console.log(cowboy);
+  
 })
 
   const handleClickCowboy = () => {
@@ -110,17 +107,17 @@ useEffect(() => {
   const handleMagician = async () => {
     var newarr = await shuffle(arr)
     setMagician(newarr)
-    console.log(newarr);
+   
   }
   
   useEffect(() => {
     handleMagician();
-    console.log(magician);
+    
   })
 
   const handleClickMagician = () => {
     handleMagician()
-    
+
     // if (magician === null) {
     //   const newMagician = shuffle(arr);
     //   setMagician(newMagician);
